@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tranform</title>
+    <style>
+        .box1 {
+            margin: auto;
+            /* transform: translate(10px,40px) scalex(1.25) scaleY(1.5) rotate(45deg); */
+            /* transform-origin: 0; */
+            /* transform: translateX(300px) translateY(200px)  ; */
+            /* transition-property: all; */
+            /* transition: scaleX(4) scaleY(2); */
+            /* transform: skew(0deg, 10deg); */
+            /* background-color: white; */
+            /* border: 2px solid red; */
+            width: 400px;
+            /* height: 20px; */
+        }
+
+        img:hover {
+            width: 500px;
+            border: 2px solid red;
+        }
+
+        img,
+        .box1 {
+            width: 400px;
+            transition-property: width, border;
+            transition-duration: 2s;
+            transition-timing-function: cubic-bezier(.29, 1.01, 1, -0.68);
+            ;
+            /* transition-delay: ; */
+        }
+
+        body {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <img src="https://source.unsplash.com/400x400/?nature" alt="nature" srcset="">
+    </div>
+</body>
+
+</html>

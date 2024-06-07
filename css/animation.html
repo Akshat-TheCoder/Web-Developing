@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .box1 {
+            width: 400px;
+            margin: auto;
+        }
+
+        @keyframes harry {
+            from {
+                width: 400px;
+                height: 400px;
+            }
+
+            to {
+                width: 500px;
+                height: 500px;
+            }
+        }
+
+        .img {
+            animation: harry 3s cubic-bezier(1, 0.09, 0.24, 2.15) 1s infinite alternate forwards;
+        }
+
+        .image {
+            margin: 300px;
+            transform: rotate(0deg);
+            animation: dragon 2s ease-in 0.125s infinite normal forwards;
+        }
+
+        @keyframes dragon {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            40% {
+                transform: rotate(180deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .box11 {
+            height: 3px;
+            background-color: red;
+            width: 0%;
+            animation: rede 0.5s ease-out 0.09s 1 normal;
+        }
+
+        @keyframes rede {
+            0% {
+                width: 0%;
+            }
+
+            100% {
+                width: 1000%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="box11"></div>
+    </header>
+    <main>
+        <div class="box1">
+            <img src="https://source.unsplash.com/400x400/?nothing,0" alt="nature" srcset="" class="img">
+        </div>
+        <div>
+            <img src="/html/photos/dragon.jpg" alt="" width="500px" class="image">
+        </div>
+    </main>
+</body>
+
+</html>
