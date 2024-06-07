@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: rgb(204, 0, 255);
+            --secondary-color: rgba(235, 87, 255, 0.856);
+            --teritory-color: rgb(0, 183, 255);
+        }
+        body{
+            background-color: var(--teritory-color);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+            /* margin: 10px; */
+            padding: 10px;
+            color: white;
+            font-size: larger;
+            font-family: "Oswald", sans-serif;
+            background-color: var(--secondary-color);
+        }
+
+        nav {
+            padding: 5px;
+            background-color: var(--primary-color);
+        }
+        a{
+            text-decoration: none;
+            text-transform: capitalize;
+            color: white;
+        }
+        a:hover{
+            color: var(--teritory-color);
+        }
+        /* a:visited{
+            color: yellow;
+        } */
+        a:active{
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
