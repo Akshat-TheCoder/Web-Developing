@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: grey;
+        }
+
+        .box {
+            border: 2px solid grey;
+            background-color: white;
+            width: 340px;
+            margin: auto;
+            border-radius: 15px;
+            /*flex-direction: row; */
+        }
+
+        .container {
+            /* display: grid;
+                justify-items: cstart; */
+
+        }
+
+        .box3 {
+            display: inline-block;
+            border: 2px solid rgb(133, 133, 133);
+            border-radius: 12px;
+            /* width: 40px; */
+            color: rgb(78, 78, 78);
+            padding: 3px 5px;
+            margin: 0 5px;
+        }
+
+        img {
+            width: 300px;
+            position: relative;
+            top: 2.5vw;
+            left: 2.5vw;
+            border-radius: 10px;
+        }
+
+        div {
+            margin: 20px;
+        }
+
+        /* .box2{
+            width: 50px; 
+        } */
+        /* .h1 {
+            padding-left: 10px;
+        } */
+        .box1 {
+            margin-left: 0;
+        }
+
+        #btn {
+            margin: 17px auto;
+            border: none;
+            border-radius: 15px;
+            height: 29px;
+            text-align: center;
+            width: 81px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: nowrap;
+            color: blue;
+            align-items: center;
+            font-size: 11px;
+            background-color: #bebeff;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="box">
+            <img src="/html/photos/lake2.jpg" alt="nature and lake" srcset=""><br>
+            <div class="container">
+                <div class="box1 box3">Nature</div>
+                <div class="box2 box3">Lake</div>
+            </div>
+            <div class="h1">
+                <h1>Lorem, ipsum dolor.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quisquam illum beatae
+                    consequatur
+                    temporibus cum harum ut aut.</p>
+            </div>
+            <button id="btn">Read More</button>
+        </div>
+    </main>
+</body>
+
+</html>
