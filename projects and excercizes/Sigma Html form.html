@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <style>
+        body {
+            background-image: url(/html/photos/form\ bg.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        form {
+            background-color: hsla(0, 0%, 50%, 50%);
+            /* text-align: center; */
+            /* opacity: 0.6; */
+            font-size: larger;
+            color: white;
+            font-weight: 700;
+            border-radius: 40px;
+            border: 2px solid rgb(201, 201, 201);
+            margin: 100px 400px 0px 400px;
+        }
+
+        p {
+            font-size: 40px;
+            text-align: center;
+            /* color: coral; */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        form>div {
+            padding-left: 100px;
+            margin: 5px;
+        }
+
+        form>div>div {
+            margin: 10px 3px;
+
+        }
+
+        label {
+            margin-left: 10px;
+        }
+
+        input,
+        select {
+            padding-left: 10px;
+            font-size: larger;
+            color: white;
+            text-transform: uppercase;
+            border: 2px solid white;
+            border-radius: 5px;
+            /* font-weight: 800; */
+            height: 30px;
+            width: 300px;
+            background: transparent;
+
+            /* outline: none; */
+            /* overflow: hidden; */
+        }
+
+        #btn {
+            background: transparent;
+            width: 150px;
+            height: 40px;
+            margin: auto 80px;
+            color: white;
+            font-size: larger;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        #First {
+            width: 180px;
+        }
+
+        #last {
+            width: 180px;
+        }
+
+        option {
+            /* color: white; */
+            font-size: 20px;
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <form action="">
+            <p>Event Registration</p>
+            <div>
+                <div><label for="Name">Name</label></div>
+                <div><input type="text" name="First Name" id="First" placeholder="First">
+                    <input type="text" name="Last Name" id="last" placeholder="Last">
+                </div>
+            </div>
+            <div>
+                <div><label for="Email">Email</label></div>
+                <div><input type="email" name="Email" id=""></div>
+            </div>
+            <div>
+                <div><label for="Phone">Phone</label></div>
+                <div><input type="number" name="Phone" id=""></div>
+            </div>
+            <div>
+                <div><label for="Topic">Topic</label></div>
+                <div><select name="Topic" id="">
+                        <option value="Select">Select</option>
+                        <option value="Dipawali">Dipawali</option>
+                        <option value="Holi">Holi</option>
+                        <option value="Eid">Eid</option>
+                        <option value="Birtrhday">Birtrhday</option>
+                        <option value="Anniversary">Anniversary</option>
+                        <option value="Death Anniversary">Death Anniversary</option>
+                        <option value="Engagement">Engagement</option>
+                        <option value="Wedding">Wedding</option>
+                        <option value="Other">Other</option>
+                    </select></div>
+            </div>
+            <div><label for="Topic">Prefered Slot</label></div>
+            <div><select name="Prefered Slot" id="">
+                    <option value="Select">Select</option>
+                    <option value="06:00 AM -- 09:00 AM">06:00 AM -- 09:00 AM</option>
+                    <option value="09:00 AM -- 12:00 PM">09:00 AM -- 12:00 PM</option>
+                    <option value="12:00 PM -- 03:00 PM">12:00 PM -- 03:00 PM</option>
+                    <option value="03:00 PM -- 06:00 PM">03:00 PM -- 06:00 PM</option>
+                    <option value="06:00 PM -- 09:00 PM">06:00 PM -- 09:00 PM</option>
+                    <option value="09:00 PM -- 00:00 AM">09:00 PM -- 00:00 AM</option>
+                    <option value="Other">Other</option>
+                </select></div>
+            </div>
+            <div><input type="button" onclick="showAlert()" value="Sign Me Up" id="btn" class="btn"></div>
+        </form>
+    </main>
+    <script>
+        function showAlert() {
+            alert('Thanks For Submiiting!');
+    }
+    </script>
+</body>
+<script>
+</script>
+
+</html>

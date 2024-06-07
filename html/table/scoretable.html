@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Table</title>
+    <style>
+        table{
+            font-size: 30px;
+    font-weight: 600;
+    border-collapse: collapse;
+    
+        }
+        td{
+            border: 3px solid;
+    border-collapse: collapse;
+        }
+        thead,tfoot{
+            background-color: yellow;
+        }
+        tbody>tr:nth-of-type(odd) {
+            background-color: rgb(89, 240, 245);
+        }
+        h1{
+            margin: 70px 0 0 0;
+        }
+        hr{
+            width: 375px;
+            color: black;
+        }
+        td,th{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div>
+            <caption><h1>Score Card OF IPL</h1></caption><hr>
+            <table>
+                <thead>
+                    <tr>
+                        <td>SR.No.</td>
+                        <td>Name</td>
+                        <td colspan="2">Score</td>
+                        <td>Total</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Virat Kohli</td>
+                        <td>21</td>
+                        <td>32</td>
+                        <td>53</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">2</td>
+                        <td>MS Dhoni</td>
+                        <td>47</td>
+                        <td>10</td>
+                        <td>57</td>
+                    </tr>
+                    <tr>
+                        <!-- <td>3</td> -->
+                        <td>Rohit Sharma</td>
+                        <td>37</td>
+                        <td>37</td>
+                        <td>74</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Total</td>
+                        <td>105</td>
+                        <td>79</td>
+                        <td>184</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </center>
+</body>
+</html>

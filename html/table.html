@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        td,
+        th {
+            border: 3px solid #e65015b3;
+            font-size: 27px;
+            font-weight: bold;
+            font-family: "Roboto,sans serif";
+        }
+
+        td,
+        th {
+            text-align: center;
+        }
+
+        tbody>tr:nth-of-type(even) {
+            background-color: yellow;
+        }
+
+        table {
+            border-collapse: collapse;
+            letter-spacing: 1px;
+        }
+
+        thead {
+            background-color: yellow;
+        }
+
+        footer {
+            text-align: center;
+            padding: 14px 0;
+            font-size: 28px;
+            font-weight: inherit;
+            font-family: Oswald;
+            background-color: coral;
+        }
+        body{
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- table -->
+    <div>
+        <center>
+            <caption><b style="font-size: 27px;">Freinds age Data</b></caption>
+            <hr style="width: 214px; color:4px solid black;">
+            <table style="width: 378px; height:200px; ">
+                <thead>
+                    <tr>
+                        <th>SR.no</th>
+                        <th>Player Name</th>
+                        <th>age</th>
+                    </tr>
+                </thead>
+                <tbody style="background-color: aqua;">
+                    <tr>
+                        <td>1</td>
+                        <td>Akshat</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>riya</td>
+                        <td>17</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>ranu</td>
+                        <td>18</td>
+                    </tr>
+                </tbody>
+                <tfoot style="background-color: green;">
+                    <tr>
+                        <td colspan="2" scope="row">Average age</td>
+                        <td>15.66</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </center>
+    </div>
+</body>
+</html>

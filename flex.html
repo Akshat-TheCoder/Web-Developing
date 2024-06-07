@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex and grid</title>
+    <style>
+        .img {
+            float: left;
+            /* clear: right; */
+            display: inline-block;
+            border: 2px solid;
+            margin: 2px;
+            /* display: none; */
+        }
+
+        .lo {
+            /* float: right;
+            clear: left; */
+            /* display: none; */
+        }
+
+        p {
+            margin: 22px 2px;
+            display: inline-block;
+            border: 2px red;
+            width: 200px;
+            /* display: none; */
+        }
+
+        .blue {
+            width: 50%;
+            height: 300px;
+            margin: auto;
+            /* min-height: 1000px;
+            max-height: 400px; */
+            /* height: 400px; */
+            /* display: inline-block; */
+            background-color: blue;
+        }
+
+        .blue1 {
+            background-color: brown;
+            width: 50%;
+            height: 300px;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+
+        .img1 {
+            border: 2px solid;
+            height: 112.5px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: beige;
+        }
+
+        .container {
+            display: flex;
+            margin: 0 0 0 0;
+            justify-content: space-evenly;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            background-color: aqua;
+            height: 400px;
+            align-items: center;
+        }
+
+        .item {
+            display: inline-block;
+            border: 2px solid red;
+            width: 200px;
+            height: 200px;
+            margin: 3px;
+            background-color: red;
+            order: 2;
+            /* flex-shrink: ; */
+        }
+
+        .item1 {
+            display: inline-block;
+            border: 2px solid red;
+            width: 200px;
+            height: 200px;
+            margin: 3px;
+            background-color: black;
+            order: 4;
+            align-self: center;
+            flex-grow: 4;
+        }
+
+        .item2 {
+            display: inline-block;
+            border: 2px solid blue;
+            width: 200px;
+            height: 200px;
+            margin: 3px;
+            background-color: blue;
+        }
+
+        .item3 {
+            display: inline-block;
+            border: 2px solid red;
+            width: 200px;
+            height: 200px;
+            margin: 3px;
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="blue">
+        <div class="img"><img src="/html/photos/p.jpg" width="200px" alt="ak"></div>
+        <div class="lo" width="200px">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita minima a voluptatibus ab inventore non.
+            </p>
+        </div><br>
+    </div>
+    <div class="blue1">
+        <div class="img1"><img src="/html/photos/p.jpg" width="200px" alt="ak"></div>
+        <div class="lo1" width="200px">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita minima a voluptatibus ab inventore
+                non.
+            </p>
+        </div><br>
+    </div>
+    <div class="container">
+        <div class="item"></div>
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+    </div>
+</body>
+
+</html>
