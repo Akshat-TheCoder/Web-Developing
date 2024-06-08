@@ -71,7 +71,7 @@
             background: transparent;
             width: 150px;
             height: 40px;
-            margin: auto 80px;
+            margin: 20px 80px;
             color: white;
             font-size: larger;
             text-transform: uppercase;
@@ -91,6 +91,19 @@
             font-size: 20px;
             background: red;
         }
+
+        input::placeholder {
+            color: rgb(201, 201, 201);
+        }
+
+        .readonly {
+            width: 50px;
+        }
+
+        .no {
+            margin: auto 80px;
+            margin-top: 7px;
+        }
     </style>
 </head>
 
@@ -98,6 +111,9 @@
     <main>
         <form action="">
             <p>Event Registration</p>
+            <div class="no"><label for="Form.No.">Form.No.</label>
+                <input type="text" placeholder="890" readonly class="readonly">
+            </div>
             <div>
                 <div><label for="Name">Name</label></div>
                 <div><input type="text" name="First Name" id="First" placeholder="First">
@@ -145,7 +161,7 @@
     <script>
         function showAlert() {
             alert('Thanks For Submiiting!');
-    }
+        }
     </script>
 </body>
 <script>

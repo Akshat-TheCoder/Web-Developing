@@ -51,6 +51,48 @@
         p:first-child{
             color: white;
         }
+        /* .container *{
+            color: aqua;
+        } */
+         .box{
+            border: 2px solid;
+         }
+        .box:first-child{
+            background-color: red;
+        }
+        .box::first-line{
+            background-color: yellow;
+            color: red;
+        }
+        .box:nth-child(even){
+            background-color: blue;
+        }
+        .box:nth-last-child(2){
+            background-color: chocolate;
+        }
+        ::first-letter{
+            font-size: 50px;
+        }
+        .container::before{
+            content: "Akshat is a BOY";
+            background-color: black;
+            color: white;
+        }
+        .container::after{
+            content: "All the best";
+            text-align: center;
+            margin: auto;
+        }
+        ::marker{
+            color: red;
+        }
+        li{
+            list-style-position: inside;
+        }
+        ::selection{
+            background-color: black;
+            color: chartreuse;
+        }
     </style>
 </head>
 <body>
@@ -64,6 +106,20 @@
         </main>
         <a href="https://www.google.com">Google</a>
         <a href="https://www.facebook2.com">Facebook</a>
+    </div>
+    <div class="container">
+        <div class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis nam quo facilis id officia sunt voluptates ex beatae! Voluptatibus voluptatum molestiae dicta quidem, reprehenderit li</div>
+        <div class="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, error?Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt at molestias tempora non?</div>
+        <div class="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero odio placeat voluptatem?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem eum explicabo at.</div>
+        <div class="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero odio placeat voluptatem?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem eum explicabo at.</div>
+        <div class="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero odio placeat voluptatem?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem eum explicabo at.</div>
+    </div>
+    <div>
+        <ul>
+            <li>home</li>
+            <li>hgfr</li>
+            <li>hgffrd</li>
+        </ul>
     </div>
 </body>
 </html>
