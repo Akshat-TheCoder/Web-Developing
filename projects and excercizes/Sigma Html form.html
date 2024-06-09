@@ -7,7 +7,7 @@
     <title>Event Registration</title>
     <style>
         body {
-            background-image: url(/html/photos/form\ bg.jpg);
+            background-image: url(/html/photos/form_bg.jpg);
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
@@ -22,7 +22,7 @@
             font-weight: 700;
             border-radius: 40px;
             border: 2px solid rgb(201, 201, 201);
-            margin: 100px 400px 0px 400px;
+            margin: 100px 400px 100px 400px;
         }
 
         p {
@@ -155,7 +155,7 @@
                     <option value="Other">Other</option>
                 </select></div>
             </div>
-            <div><input type="button" onclick="showAlert()" value="Sign Me Up" id="btn" class="btn"></div>
+            <div><input type="button" onclick="showAlert(),reset()" value="Sign Me Up" id="btn" class="btn"></div>
         </form>
     </main>
     <script>
