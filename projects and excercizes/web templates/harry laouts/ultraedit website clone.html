@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+            /* height: 50px; */
+            margin-right: 150px;
+        }
+
+        .img {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            /* height: 50px; */
+            margin-right: 278px;
+        }
+
+        /* img{
+            margin-top: 30px;
+        } */
+        header li {
+            margin-top: 38px;
+            display: inline-block;
+            color: rgb(34, 34, 34);
+            font-family: "Segoe UI";
+            font-weight: 400;
+            margin: 20px;
+            margin-top: 25px;
+            font-size: 16px;
+            /* font-size: 20px; */
+        }
+
+        main {
+            margin: auto;
+            margin-top: 100px;
+            width: 960px;
+        }
+
+        main center p {
+            font-size: 50px;
+        }
+
+        center {
+            display: grid;
+            grid-template-columns: auto auto;
+            /* place-content: center; */
+            align-items: center;
+            justify-content: center;
+        }
+
+        main center img {
+            margin-top: 15px;
+            margin-left: -95px;
+        }
+
+        #btn {
+            font-size: 14px;
+            background-color: #00b6d1;
+            border-width: 0px !important;
+            border-radius: 5px;
+            font-weight: bold;
+            font-style: normal;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 12px 20px;
+            margin: 21px 333px;
+        }
+
+        #btn a {
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .lang{
+            margin-top: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <div class="img">
+                    <img src="photos/logo.PNG" alt="" srcset="">
+                </div>
+                <li>Products</li>
+                <li>Pricing</li>
+                <li>Resource</li>
+                <li>About Us</li>
+                <li>Security And Complaince</li>
+                <li><img src="photos/logo11.png" width="30px" alt=""></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <center>
+                <p style="font-size: 50px;">Download <b>UltraEdit</b> for Windows</p>
+                <img src="photos/review.png" alt="">
+                <p style="font-size: 24px;">Download and try UltraEdit before you buy it! This download includes the
+                    full
+                    Windows version of the text editor.</p>
+            </center>
+            <button id="btn"><a href="https://www.ultraedit.com/downloads/uex-thank-you/">download mac or linux
+                    version</a></button>
+        </div>
+        <div class="lang">
+            <img src="photos/logo111.PNG" alt="">
+        </div>
+    </main>
+</body>
+
+</html>
